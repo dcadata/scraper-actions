@@ -9,6 +9,8 @@ def main():
     except Exception as exc:
         text = '\n\n'.join((str(exc), format_exc()))
         open('exception.txt', 'w').write(text)
+    else:
+        open('exception.txt', 'w').write('')
 
 
 if __name__ == '__main__':
