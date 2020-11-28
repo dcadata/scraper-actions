@@ -16,7 +16,7 @@ jobs:
           python-version: '3.8'
       - run: pip3 install pandas
       - run: |-
-          python -c "from pandas import read_html; read_html('https://en.wikipedia.org/wiki/List_of_Mayday_episodes')[0].to_csv('mayday.csv')"
+          python task_mayday.py
       - run: |-
           curl https://www.politico.com/2020-statewide-results/36/potus-counties.json --output 36-potus-counties.json
       - name: Commit and push if changed
