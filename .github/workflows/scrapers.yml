@@ -19,7 +19,7 @@ jobs:
       - run: python task_mayday.py
       - name: Commit and push if changed
         run: |-
-          git config user.name "Automated"
+          git config user.name "Actions"
           git config user.email "actions@users.noreply.github.com"
           git add -A
           timestamp=$(date -u)
